@@ -1,0 +1,12 @@
+{
+  "name": "interactive-museum",
+  "version": "1.0.0",
+  "description": "A 3D interactive museum for displaying artwork",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+} 

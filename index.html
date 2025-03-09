@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 23 :D</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        #instructions {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        #artwork-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 80%;
+            text-align: center;
+            display: none;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+            border: 1px solid rgba(255, 105, 180, 0.3);
+        }
+        #artwork-info h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #ff69b4;
+            font-size: 24px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+        #artwork-info p {
+            margin: 10px 0;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+        #artwork-info .love-letter {
+            font-style: italic;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        #artwork-info .controls {
+            font-size: 14px;
+            color: #cccccc;
+            margin-top: 15px;
+        }
+        #loading-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+        }
+        #loading-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+        #loading-progress {
+            height: 100%;
+            width: 0%;
+            background-color: #4CAF50;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="instructions">
+        WASD - Move around<br>
+        V - Zoom in on artwork<br>
+        ESC - Exit zoom view<br>
+        R - Emergency reset (if stuck)<br>
+        Mouse - Look around
+    </div>
+    <div id="artwork-info">
+        <h2>Our Special Moments</h2>
+        <div class="love-letter">
+            <p>My dearest Kylie,</p>
+            <p id="love-message">Every moment with you is a treasure.</p>
+            <p>Forever yours ❤️</p>
+        </div>
+        <div class="controls">Press ESC to return to museum view</div>
+    </div>
+    <div id="loading-container">
+        <h2>Happy 23rd Birthday, Kylie! 🎂</h2>
+        <div id="loading-bar">
+            <div id="loading-progress"></div>
+        </div>
+        <p id="loading-text">Preparing your special gift...</p>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "three/examples/": "https://unpkg.com/three@0.160.0/examples/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
