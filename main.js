@@ -470,7 +470,7 @@ function createArtworks() {
         },
         { 
             title: "10-12-24", 
-            description: "First rave togetherrrrr. I love you happy birthday sweet 21." 
+            description: "First rave togetherrrrr. I love you happy birthday sweet 23." 
         },
         { 
             title: "9-23-24", 
